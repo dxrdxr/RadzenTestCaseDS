@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>DiveShopBlazor.WebAssembly</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="DiveShopBlazor.WebAssembly.styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="_content/Radzen.Blazor/css/default.css">
+</head>
+
+<body>
+    <div id="app">
+        <div style="position:absolute; top:30vh; width:100%; text-align:center">
+            <h1>DiveShop</h1>
+        </div>
+        <div id="app" style="margin: 0 auto; width: 100vw; height: 100vh">
+            <div class="text-center pt-3" style="color: purple; font-size: 16pt">
+                The application is loading...
+            </div>
+            <div class="text-center mt-3">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"
+                      style="font-size: 16pt; width: 36px; height: 36px; color: purple" />
+            </div>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+</body>
+
+</html>

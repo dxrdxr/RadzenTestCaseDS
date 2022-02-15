@@ -1,0 +1,12 @@
+﻿@page "/certifications"
+@inject NotificationService notificationService
+
+<h3>Certifications</h3>
+
+<RadzenDataGrid Data="@certifications" Count="@count" TItem="CertificationVM" LoadData="@LoadDataAsync" IsLoading="@loading" AllowMultiColumnSorting="true" AllowSorting="true" RowSelect="@RowSelect">
+    <Columns>
+        <RadzenDataGridColumn TItem="CertificationVM" Property="CertificationID" Title="ID" />
+        <RadzenDataGridColumn TItem="CertificationVM" Property="Agency" Title="Agency" />
+        <RadzenDataGridColumn TItem="CertificationVM" Property="Name" Title="Name" />
+    </Columns>
+</RadzenDataGrid>
